@@ -32,7 +32,7 @@ This Python script monitors a specified Litecoin ( LTC ) address for new transac
 
 1. Update the `webhook_url` and `ltc_address` variables in the script with your Discord webhook URL and Litecoin address, respectively.
 
-2. (Optional) If you want to use a proxy, set the `proxy_url` variable. If not, leave it blank or set it to `None`.
+2. [ Optional ] If you want to use a proxy, set the `proxy_url` variable. If not, leave it blank or set it to `None`.
 
 3. Run the script:
     ```sh
