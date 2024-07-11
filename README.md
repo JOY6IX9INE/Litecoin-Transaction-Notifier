@@ -43,7 +43,7 @@ This Python script monitors a specified Litecoin (LTC) address for new transacti
 
 - **webhook_url**: The URL of your Discord webhook where notifications will be sent.
 - **ltc_address**: The Litecoin address to be monitored for new transactions.
-- **proxy_url**: (Optional) The proxy URL for network requests. Leave it blank or set it to `None` if not using a proxy.
+- **proxy_url** [ Optional ] : The proxy URL for network requests. Leave it blank or set it to `None` if not using a proxy.
 
 ## Example
 
@@ -61,14 +61,8 @@ if __name__ == '__main__':
     notifier.monitor_transactions()
 ```
 
-## Contributing
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
+# Disclaimer
+This tool is created for educational purposes and ethical use only. Any misuse of this tool for malicious purposes is not condoned. The developers of this tool are not responsible for any illegal or unethical activities carried out using this tool.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+[![Star History Chart](https://api.star-history.com/svg?repos=JOY6IX9INE/Litecoin-Transaction-Notifier&type=Date)](https://star-history.t9t.io/#JOY6IX9INE/Litecoin-Transaction-Notifier&Date)
