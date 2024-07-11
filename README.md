@@ -17,13 +17,13 @@ This Python script monitors a specified Litecoin ( LTC ) address for new transac
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository :
     ```sh
     git clone https://github.com/JOY6IX9INE/ltc_notify.git
     cd ltc_notify
     ```
 
-2. Install the required Python libraries:
+2. Install the required Python libraries :
     ```sh
     pip install requests
     ```
