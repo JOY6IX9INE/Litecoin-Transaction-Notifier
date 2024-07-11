@@ -41,13 +41,13 @@ This Python script monitors a specified Litecoin ( LTC ) address for new transac
 
 ## Configuration
 
-- **webhook_url**: The URL of your Discord webhook where notifications will be sent.
-- **ltc_address**: The Litecoin address to be monitored for new transactions.
+- **webhook_url** : The URL of your Discord webhook where notifications will be sent.
+- **ltc_address** : The Litecoin address to be monitored for new transactions.
 - **proxy_url** [ Optional ] : The proxy URL for network requests. Leave it blank or set it to `None` if not using a proxy.
 
 ## Example
 
-Here's an example of how to set up the script:
+Here's an example of how to set up the script :
 
 ```python
 if __name__ == '__main__':
