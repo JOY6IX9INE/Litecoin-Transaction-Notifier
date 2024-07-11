@@ -1,7 +1,7 @@
 
 # Litecoin Transaction Notifier
 
-This Python script monitors a specified Litecoin (LTC) address for new transactions and sends a notification to a Discord webhook when a transaction is detected. The script supports the use of a proxy for network requests.
+This Python script monitors a specified Litecoin ( LTC ) address for new transactions and sends a notification to a Discord webhook when a transaction is detected. The script supports the use of a proxy for network requests.
 
 ## Features
 
