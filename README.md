@@ -1,1 +1,74 @@
-# Litecoin-Transaction-Notifier
+
+# Litecoin Transaction Notifier
+
+This Python script monitors a specified Litecoin (LTC) address for new transactions and sends a notification to a Discord webhook when a transaction is detected. The script supports the use of a proxy for network requests.
+
+## Features
+
+- Fetches the current Litecoin price in USD.
+- Monitors a Litecoin address for new transactions.
+- Sends a notification to a specified Discord webhook with details about the transaction.
+- Supports optional proxy settings for network requests.
+
+## Requirements
+
+- Python 3.x
+- `requests` library
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/JOY6IX9INE/ltc_notify.git
+    cd ltc_notify
+    ```
+
+2. Install the required Python libraries:
+    ```sh
+    pip install requests
+    ```
+
+## Usage
+
+1. Update the `webhook_url` and `ltc_address` variables in the script with your Discord webhook URL and Litecoin address, respectively.
+
+2. (Optional) If you want to use a proxy, set the `proxy_url` variable. If not, leave it blank or set it to `None`.
+
+3. Run the script:
+    ```sh
+    python ltc_notify.py
+    ```
+
+## Configuration
+
+- **webhook_url**: The URL of your Discord webhook where notifications will be sent.
+- **ltc_address**: The Litecoin address to be monitored for new transactions.
+- **proxy_url**: (Optional) The proxy URL for network requests. Leave it blank or set it to `None` if not using a proxy.
+
+## Example
+
+Here's an example of how to set up the script:
+
+```python
+if __name__ == '__main__':
+    webhook_url = 'https://discord.com/api/webhooks/xxxxxx/xxxx'
+    ltc_address = 'LP1m3ZMadZETjn6ukyXgPRBQoVqqNYQnX4'
+    # Add Proxy Else Leave Blank Or Set None
+    proxy_url = ""
+    
+    notifier = ltc_notify(webhook_url, ltc_address, proxy_url)
+    notifier.fetch_ltc_price()
+    notifier.monitor_transactions()
+```
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
